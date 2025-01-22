@@ -39,8 +39,7 @@ class Program
         Console.WriteLine("1.Retirer de l'argent");
         Console.WriteLine("2.Ajouter de l'argent");
         Console.WriteLine("3.Voir solde bancaire");
-        Console.WriteLine("4.Envoyer de l'argent");
-        Console.WriteLine("5.Quitter");
+        Console.WriteLine("4.Quitter");
         string choice = Console.ReadLine();
 
         switch (choice)
@@ -55,9 +54,6 @@ class Program
                 VerifyMoneyAccount(account);
                 break;
             case "4":
-                //SendMoney();
-                break;
-            case "5":
                 return;
         }
     }
