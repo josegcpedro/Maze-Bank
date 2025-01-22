@@ -39,23 +39,41 @@ class Program
         Console.WriteLine("1.Retirer de l'argent");
         Console.WriteLine("2.Ajouter de l'argent");
         Console.WriteLine("3.Voir solde bancaire");
-        Console.WriteLine("4.Quitter");
+        Console.WriteLine("4.Envoyer de l'argent");
+        Console.WriteLine("5.Quitter");
         string choice = Console.ReadLine();
 
         switch (choice)
         {
             case "1":
-                //Withdraw();
+                //Withdraw(account);
                 break;
             case "2":
-                //Add();
+                AddMoneyToAccount(account);
                 break;
             case "3":
-                //VerifyMoneyAccount();
+                VerifyMoneyAccount(account);
                 break;
             case "4":
+                //SendMoney();
+                break;
+            case "5":
                 return;
         }
+    }
+
+
+    static void AddMoneyToAccount(Account account){
+        Console.WriteLine("Combien d'argent voulez vous ajouter?");
+        string input = Console.ReadLine();
+        if (decimal.TryParse(input, out decimal wantedMoneyToAdd)){
+            account.Balance += wantedMoneyToAdd;
+            Console.WriteLine($"Votre nouveau solde est de {account.Balance}");
+        }
+    }
+    static void VerifyMoneyAccount(Account account)
+    {
+        Console.WriteLine($"Voici votre solde: {account.Balance}");
     }
 
 }
