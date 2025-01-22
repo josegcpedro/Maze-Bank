@@ -1,0 +1,15 @@
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/MazeBank
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/MazeBank.deps.json
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/MazeBank.runtimeconfig.json
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/MazeBank.dll
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/ref/MazeBank.dll
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/bin/Debug/net6.0/MazeBank.pdb
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.csproj.AssemblyReference.cache
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.AssemblyInfoInputs.cache
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.AssemblyInfo.cs
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.csproj.CoreCompileInputs.cache
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.dll
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/ref/MazeBank.dll
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.pdb
+/Users/josepedro/Desktop/cSharp/MazeBank/MazeBank/obj/Debug/net6.0/MazeBank.genruntimeconfig.cache
