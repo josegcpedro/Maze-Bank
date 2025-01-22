@@ -46,7 +46,7 @@ class Program
         switch (choice)
         {
             case "1":
-                //Withdraw(account);
+                Withdraw(account);
                 break;
             case "2":
                 AddMoneyToAccount(account);
@@ -62,18 +62,40 @@ class Program
         }
     }
 
-
-    static void AddMoneyToAccount(Account account){
+    static void Withdraw(Account account)
+    {
+        Console.WriteLine("Combien d'argent voulez-vous retirer?");
+        string input = Console.ReadLine();
+        if (decimal.TryParse(input, out decimal wantedMoneyToRemove))
+        {
+            if (account.Balance > wantedMoneyToRemove)
+            {
+                account.Balance -= wantedMoneyToRemove;
+                Console.WriteLine($"Voici votre nouveau solde! {account.Balance}");
+                Menu(account);
+            }
+            else
+            {
+                Console.WriteLine("Vous n'avez pas assez d'argent dans votre compte pour retirer l'argent que vous souhaitez retirer");
+                Menu(account);
+            }
+        }
+    }
+    static void AddMoneyToAccount(Account account)
+    {
         Console.WriteLine("Combien d'argent voulez vous ajouter?");
         string input = Console.ReadLine();
-        if (decimal.TryParse(input, out decimal wantedMoneyToAdd)){
+        if (decimal.TryParse(input, out decimal wantedMoneyToAdd))
+        {
             account.Balance += wantedMoneyToAdd;
             Console.WriteLine($"Votre nouveau solde est de {account.Balance}");
+            Menu(account);
         }
     }
     static void VerifyMoneyAccount(Account account)
     {
         Console.WriteLine($"Voici votre solde: {account.Balance}");
+        Menu(account);
     }
 
 }
